@@ -10,13 +10,13 @@ class AnimalList extends Component {
       posts: [],
     };
   }
-
+  
   componentDidMount() {
     axios
-      .get("https://zoo-animal-api.herokuapp.com/animals/rand/10")
+      .get("https://api.disneyapi.dev/characters/")
       .then((response) => {
-        console.log(response);
-        this.setState({ posts: response.data });
+        console.log([response.data]);
+        this.setState({ posts: [response.data] });
       })
       .catch((error) => {
         console.log(error);
@@ -25,14 +25,17 @@ class AnimalList extends Component {
 
   render() {
     const { posts } = this.state;
+
     return (
       <div>
         {posts.length
-          ? posts.map((post) => (
-              <div key={post.id}>
-                <p>Name = {post.name} <br></br></p>
-                <p>Latin name = {post.latin_name}<br></br></p>
-                <img src={post.image_link} />
+          ? posts.map((posts) => (
+            console.log(posts._id),
+              <div key={posts._id}>
+                <p>
+                  Name = {posts.name} <br></br>
+                </p>
+                <img src={posts.imageUrl} />
               </div>
             ))
           : null}
