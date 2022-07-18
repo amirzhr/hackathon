@@ -1,12 +1,14 @@
+import React, { Component } from "react";
 import "./App.css";
-import GetRequest from "./Components/GetRequest";
+import DataDisney from "./components/DataDisney";
 
-function App() {
-  return (
-    <div className="App">
-      <GetRequest />
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <DataDisney />
+      </div>
+    );
+  }
 }
-
 export default App;
