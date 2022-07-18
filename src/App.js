@@ -1,16 +1,16 @@
 import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import AnimalList from "./Components/AnimalList";
+import GetRequest from "./Components/GetRequest";
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <AnimalList />
-      </div>
-    );
-  }
+// import AnimalList from "./Components/AnimalList";
+
+function App() {
+  return (
+    <div>
+      <GetRequest />
+    </div>
+  );
 }
 
 export default App;
