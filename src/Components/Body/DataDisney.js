@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, {useEffect, useState} from "react";
 import "./index.css";
+import showDescription from "./showDescription";
 
 function DataDisney() {
   //current page
@@ -15,7 +16,7 @@ function DataDisney() {
 
   const getCharacters = async() => {
     try {
-      const response = await axios.get("https://api.disneyapi.dev/characters", {
+      const response = await axios.get("https://api.disneyapi.dev/characters/", {
         params: { page: currentPage },
       });
       setCharacterList(response.data.data);
@@ -47,10 +48,24 @@ function DataDisney() {
         {characterList.map((characters) => {
           return (
             <div key={characters._id} className="images">
-              <img src={characters.imageUrl} />
+              <button id="show-modal">
+                <img className="scale" src={characters.imageUrl} />
+              </button>
             </div>
           );
         })}
+      </div>
+
+      <div id="myModal" className="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Change keybinds</h2>
+          </div>
+          <div class="modal-body">
+            <p>placeholder</p>
+          </div>
+        </div>
       </div>
     </div>
   );
