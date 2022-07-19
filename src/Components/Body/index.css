@@ -1,0 +1,10 @@
+img {
+width: 300px;
+height: 300px;
+}
+
+.images {
+    display:inline-flex;
+    flex-direction: row;
+    padding: 1rem;
+}
