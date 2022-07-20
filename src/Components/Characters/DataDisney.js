@@ -38,14 +38,14 @@ function DataDisney() {
   return (
     <div className="body">
       <h1>CHARACTERS</h1>
-      <button
+      <button className="previous"
         onClick={() => {
           setCurrentPage(currentPage - 1);
         }}
       >
         {""} Previous Page
       </button>
-      <button
+      <button className="next"
         onClick={() => {
           setCurrentPage(currentPage + 1);
         }}
