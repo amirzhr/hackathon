@@ -1,13 +1,15 @@
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
 import "./Styles.css";
+import disney from "./disney-logo.png"
+
 
 export default function Navbar() {
   return (
-    <nav className="nav">
+    <nav className="navbar">
       <Link to="/" className="site-title">
-        Site Name
+        <img src={disney} />
       </Link>
-      <ul>
+      <ul className="menu-bar">
         <CustomLink to="/">Home</CustomLink>
         <CustomLink to="/Characters">Characters</CustomLink>
         <CustomLink to="/Favourites">Favourites</CustomLink>
