@@ -14,10 +14,43 @@
   align-content: center;
 }
 
-.previous {
+.previous{
+    
+    border-radius:25px 5px 5px 25px;
+    background: linear-gradient(45deg, #c44d96, #b700ff);
+    padding: 1px;
+    cursor:pointer; 
+    height: 45px;
+    width:65px;
+    color:rgb(9, 8, 61);
+    line-height:45px;
+    text-align:center;
+    font-size:30px;
+    
+
+
+}
+.next {
+  
+    border-radius:5px 25px 25px 5px;
+    background: linear-gradient(45deg, #c44d96, #b700ff);
+    padding: 1px;
+    cursor:pointer; 
+    height: 45px;
+    width:65px;
+    color:rgb(9, 8, 61);
+    line-height:45px;
+    text-align:center;
+    font-size:30px;
 }
 
-.next {
+.previous.active,
+.previous:hover,
+.next:active,
+.next:hover{
+
+    color:#fff;
+    background:#953abe;
 }
 
 .character {
