@@ -2,6 +2,8 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Navigate, useNavigate } from "react-router-dom";
 import "./index.css";
+import { AiOutlineLeftCircle } from "react-icons/ai";
+import { AiOutlineRightCircle } from "react-icons/ai";
 
 function DataDisney() {
   //current page
@@ -37,22 +39,25 @@ function DataDisney() {
   console.log(characterList);
   return (
     <div className="body">
-      <h1>CHARACTERS</h1>
-      <button className="previous"
-        onClick={() => {
-          setCurrentPage(currentPage - 1);
-        }}
-      >
-        {""} Previous Page
-      </button>
-      <button className="next"
-        onClick={() => {
-          setCurrentPage(currentPage + 1);
-        }}
-      >
-        {""} Next Page
-      </button>
-
+      <h1 className="title">CHARACTERS</h1>
+      <div className="buttons">
+        <button
+          className="previous"
+          onClick={() => {
+            setCurrentPage(currentPage - 1);
+          }}
+        >
+          {""} <AiOutlineLeftCircle/>
+        </button>
+        <button
+          className="next"
+          onClick={() => {
+            setCurrentPage(currentPage + 1);
+          }}
+        >
+          {""} <AiOutlineRightCircle/>
+        </button>
+      </div>
       <div>
         {characterList.map((characters) => {
           return (
