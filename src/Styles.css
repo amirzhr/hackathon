@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
 * {
   box-sizing: border-box;
 }
@@ -8,7 +10,10 @@ body {
 
 .navbar {
   /* background-color: #220066; */
-  background-image: linear-gradient(rgba(138, 0, 131, 0.7), rgba(53, 2, 44, 0.7)),
+  background-image: linear-gradient(
+      rgba(138, 0, 131, 0.7),
+      rgba(53, 2, 44, 0.7)
+    ),
     url(frozen.jpg);
   display: flex;
   justify-content: space-between;
@@ -39,15 +44,84 @@ img {
 }
 
 .navbar a {
-  color: white;
+  color: rgb(48, 6, 82);
   text-decoration: none;
   font-size: 30px;
+
+  position: relative;
+  list-style: none;
+  width: 60px;
+  height: 60px;
+  background: rgb(161, 29, 194);
+  border-radius: 60px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  font-family: "Poppins", sans-serif;
 }
 
-.navbar li:hover {
-  background-color: #777;
+.navbar a:hover {
+  width: 180px;
 }
 
-.navbar li:active {
-  background-color: #555;
+.navbar a::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 60px;
+  background: linear-gradient(45deg, #c44d96, #b700ff);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.navbar a:hover::before {
+  opacity: 0.2;
+}
+
+.navbar a::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  width: 100%;
+  height: 100%;
+  border-radius: 60px;
+  transition: 0.5s;
+  filter: blur(20px);
+  z-index: -1;
+  opacity: 0;
+}
+
+.navbar a:hover::after {
+  opacity: 0.5s;
+}
+/* -----------------------------------------icon */
+.navbar a AiOutlineHome {
+  color: #777;
+  font-size: 1.75em;
+  transition: 0.5s;
+  transition-delay: 0.25s;
+}
+
+.navbar a:hover AiOutlineHome {
+  transform: scale(0);
+  color: rgb(127, 0, 153);
+  transition-delay: 0s;
+}
+
+.navbar a.title {
+  color: #fff;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  transform: scale(0);
+  transition: 0.5s;
+  transition-delay: 0s;
+}
+
+.navbar a:hover.title {
+  transform: scale(1);
+  transition-delay: 0.25s;
 }
