@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "./index.css";
 import { AiOutlineLeftCircle } from "react-icons/ai";
 import { AiOutlineRightCircle } from "react-icons/ai";
@@ -64,6 +64,7 @@ function DataDisney() {
               <button id="show-modal">
                 <img
                   className="scale"
+                  alt = "scaling"
                   onClick={() => {
                     goToPage(characters._id);
                   }}

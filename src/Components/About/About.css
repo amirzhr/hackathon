@@ -1,8 +1,117 @@
-.body {
-  min-height: 100vh;
+@import url(https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Lobster&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Crimson+Text&family=Josefin+Sans:wght@300&family=Lobster&family=Source+Serif+Pro:wght@300&display=swap);
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.footer {
   width: 100%;
-  background-image: url(frozen.jpeg);
-  background-position: center;
-  background-size: cover;
-  position: relative;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.end {
+  margin-bottom: 25px;
+  margin-top: 400px;
+  font-weight: 600;
+  color: white;
+}
+
+.about_us {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+h1 {
+  color: black;
+  font-size: 36px;
+  font-weight: 600;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Lobster", cursive;
+}
+
+h3 {
+  margin-left: 100px;
+  margin-right: 100px;
+  color: black;
+  font-size: 26px;
+  font-weight: 200;
+  text-align: justify;
+  font-weight: bold;
+  font-family: "Source Serif Pro", serif;
+}
+
+.about-jazli {
+  color: white;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+  text-align: justify;
+}
+
+.about-mei {
+  color: white;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+  text-align: justify;
+}
+
+.about-amir {
+  color: white;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+  text-align: justify;
+}
+
+.row {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about_col {
+  margin: 50px;
+  flex-basis: 31%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(frozen.jpeg);
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+.about_col img {
+  height: 200px;
+  width: 200px;
+  align-items: center;
+}
+
+.about_col h3 {
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+  color: white;
+}
+
+.about_col:hover {
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+  color: red;
+}
+
+.about_col p {
+  font-size: 20px;
+  letter-spacing: 0.2px;
+  font-weight: bold;
+  font-family: "Source Serif Pro", serif;
 }
