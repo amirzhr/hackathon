@@ -32,6 +32,7 @@ function DataDisney() {
     }
   };
 
+  //Navigate to character description page
   const goToPage = React.useCallback((id) => {
     navigate(`/characters/${id}`);
   });
@@ -56,15 +57,16 @@ function DataDisney() {
       >
         {""} <AiOutlineRightCircle />
       </button>
+      <h2 className="pages">Page {currentPage}/149</h2>
 
       <div>
         {characterList.map((characters) => {
           return (
             <div key={characters._id} className="images">
-              <button id="show-modal">
+              <button id="show-char">
                 <img
                   className="scale"
-                  alt = "scaling"
+                  alt="scaling"
                   onClick={() => {
                     goToPage(characters._id);
                   }}

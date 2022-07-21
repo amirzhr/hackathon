@@ -1,3 +1,6 @@
+@import url(https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Lobster&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Crimson+Text&family=Josefin+Sans:wght@300&family=Lobster&family=Source+Serif+Pro:wght@300&display=swap);
+
 .body {
   min-height: 100vh;
   width: 100%;
@@ -6,3 +9,28 @@
   background-size: cover;
   position: relative;
 }
+
+.fav {
+  color: black;
+  font-size: 70px;
+  font-weight: 600;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Lobster", cursive;
+}
+
+.src {
+  border: 5px solid rgb(15, 2, 63);
+  width: 300px;
+  height: 300px;
+}
+
+.img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.src1 {
+  margin-bottom: 50px;
+  color: whitesmoke;
+} 

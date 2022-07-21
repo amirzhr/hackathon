@@ -14,43 +14,38 @@
   align-content: center;
 }
 
-.previous{
-    
-    border-radius:25px 5px 5px 25px;
-    background: linear-gradient(45deg, #c44d96, #b700ff);
-    padding: 1px;
-    cursor:pointer; 
-    height: 45px;
-    width:65px;
-    color:rgb(9, 8, 61);
-    line-height:45px;
-    text-align:center;
-    font-size:30px;
-    
-
-
+.previous {
+  border-radius: 25px 5px 5px 25px;
+  background: linear-gradient(45deg, #c44d96, #b700ff);
+  padding: 1px;
+  cursor: pointer;
+  height: 45px;
+  width: 65px;
+  color: rgb(9, 8, 61);
+  line-height: 45px;
+  text-align: center;
+  font-size: 30px;
 }
+
 .next {
-  
-    border-radius:5px 25px 25px 5px;
-    background: linear-gradient(45deg, #c44d96, #b700ff);
-    padding: 1px;
-    cursor:pointer; 
-    height: 45px;
-    width:65px;
-    color:rgb(9, 8, 61);
-    line-height:45px;
-    text-align:center;
-    font-size:30px;
+  border-radius: 5px 25px 25px 5px;
+  background: linear-gradient(45deg, #c44d96, #b700ff);
+  padding: 1px;
+  cursor: pointer;
+  height: 45px;
+  width: 65px;
+  color: rgb(9, 8, 61);
+  line-height: 45px;
+  text-align: center;
+  font-size: 30px;
 }
 
 .previous.active,
 .previous:hover,
 .next:active,
-.next:hover{
-
-    color:#fff;
-    background:#953abe;
+.next:hover {
+  color: #fff;
+  background: #953abe;
 }
 
 .character {
@@ -58,7 +53,7 @@
   height: 400px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   width: 400px;
-  border: 5px solid rgb(63, 2, 58);
+  border: 5px solid rgb(15, 2, 63);
 }
 .name {
 }
@@ -102,7 +97,7 @@
 .description {
   display: inline-flex;
   margin: 50px 200px 50px 200px;
-  border: 5px solid rgb(63, 2, 58);
+  border: 5px solid rgb(15, 2, 63);
   flex-wrap: wrap;
   justify-content: left;
   text-align: left;
@@ -123,4 +118,30 @@ p {
 
 .commercials {
   padding: 9px;
+}
+
+.btn-favourites {
+  font-family: "Poppins";
+  position: relative;
+  margin: 32px;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: 500;
+  display: inline-block;
+  margin-top: 50px;
+  padding: 8px 20px;
+  background: rgb(13, 6, 77);
+  color: #fff;
+  border-radius: 40px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.btn-favourites:hover {
+  transform:scale(1.1,1.1)
+}
+
+.category {
+  font-size: large;
 }

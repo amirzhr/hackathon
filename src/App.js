@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import DataDisney from "./Components/Characters/DataDisney";
-import Navbar from "./Navbar"
+import Navbar from "./Navbar";
 import Favourites from "./Components/Favourites/Favourites";
 import About from "./Components/About/About";
 import { Route, Routes } from "react-router-dom";

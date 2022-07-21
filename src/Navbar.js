@@ -9,6 +9,7 @@ import { AiOutlineInfoCircle } from "react-icons/ai";
 
 export default function Navbar() {
   return (
+    //Linking to other pages
     <nav className="navbar">
       <Link to="/" className="site-title">
         <img src={disney} className="disney" />
@@ -33,7 +34,6 @@ export default function Navbar() {
 
 function CustomLink({ to, children, ...props }) {
   const resolvedPath = useResolvedPath(to);
-  const isActive = useMatch({ path:resolvedPath.pathname, end:true})
   const path = window.location.pathname;
   return (
     <li className={path === to ? "active" : ""}>

@@ -3,7 +3,9 @@ import axios from "axios";
 import { useParams } from "react-router-dom";
 import "./index.css";
 
-export default function Page() {
+export const fav = [];
+
+function Page() {
   const { id } = useParams();
   const [profile, setProfile] = useState([]);
 
@@ -24,42 +26,59 @@ export default function Page() {
 
   console.log(profile);
 
+  function add_fav() {
+    fav.push(profile);
+    console.log(fav);
+  }
+
   return (
     <div className="page-container">
       <div>
         <img className="character" src={profile.imageUrl}></img>
         <h1 className="name">"{profile.name}"</h1>
-        <button>Add to Favourites</button>
+        <button onClick={add_fav} className="btn-favourites">
+          Add to Favourites
+        </button>
       </div>
       <div className="description">
         <div className="found-container">
           <h1 className="film">Films & TV Shows</h1>
           <div>
-            <p>Films: {profile.films}</p>
+            <p className="category">Films: {[profile.films].join(",")}</p>
           </div>
           <div>
-            <p>TV Shows: {profile.tvShows}</p>
+            <p className="category">TV Shows: {[profile.tvShows].join(",")}</p>
           </div>
           <div>
-            <p>Short Films: {profile.shortFilms}</p>
+            <p className="category">
+              Short Films: {[profile.shortFilms].join(",")}
+            </p>
           </div>
         </div>
         <div className="friends-container">
           <h1 className="allies-enemies"> Allies & Enemies</h1>
           <div>
-            <p>Known Allies: {profile.allies}</p>
+            <p className="category">
+              Known Allies: {[profile.allies].join(",")}
+            </p>
           </div>
           <div>
-            <p>Known Enemies: {profile.enemies}</p>
+            <p className="category">
+              Known Enemies: {[profile.enemies].join(",")}
+            </p>
           </div>
         </div>
         <div className="commercial-container">
           <h1 className="commercials">Commercials</h1>
           <div>
-            <p>video Games: {profile.videoGames}</p>
+            <p className="category">
+              video Games: {[profile.videoGames].join(",")}
+            </p>
           </div>
           <div>
-            <p>Park Attractions: {profile.parkAttractions}</p>
+            <p className="category">
+              Park Attractions: {[profile.parkAttractions].join(",")}
+            </p>
           </div>
         </div>
       </div>
@@ -67,11 +86,4 @@ export default function Page() {
   );
 }
 
-            {
-              /* <ul>
-              {" "}
-              {profile.films?.map((z) => (
-                <li>{z}</li>
-              ))}
-            </ul> */
-            }
+export default Page;

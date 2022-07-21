@@ -9,11 +9,7 @@ body {
 }
 
 .navbar {
-  background-image: linear-gradient(
-      rgba(138, 0, 131, 0.7),
-      rgba(53, 2, 44, 0.7)
-    ),
-    url(frozen.jpg);
+  background-color: rgb(13, 6, 77);
   display: flex;
   justify-content: space-between;
   align-items: center;
