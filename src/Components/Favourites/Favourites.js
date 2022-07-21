@@ -5,7 +5,9 @@ import "./Favourites.css"
 const Favourites = () => {
     return (
       <section className="body">
-        <div></div>
+        <div>
+          
+        </div>
       </section>
     );
 };
