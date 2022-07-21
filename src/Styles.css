@@ -40,7 +40,7 @@ img {
   margin: 0;
   list-style: none;
   display: flex;
-  gap: 3rem;
+  gap: 1rem;
 }
 
 .navbar a {
@@ -64,7 +64,7 @@ img {
 }
 
 .navbar a:hover {
-  width: 180px;
+  width: 100px;
 }
 
 .navbar a::before {
