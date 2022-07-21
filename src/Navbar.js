@@ -11,7 +11,7 @@ export default function Navbar() {
   return (
     <nav className="navbar">
       <Link to="/" className="site-title">
-        <img src={disney} className="img" />
+        <img src={disney} className="disney" />
       </Link>
       <ul className="menu-bar">
         <CustomLink to="/">
