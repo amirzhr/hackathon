@@ -1,19 +1,31 @@
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
 import "./Styles.css";
 import disney from "./disney-logo.png"
+import { AiOutlineHome } from "react-icons/ai";
+import { TbBuildingCastle } from "react-icons/tb";
+import { AiOutlineHeart } from "react-icons/ai";
+import { AiOutlineInfoCircle } from "react-icons/ai";
 
 
 export default function Navbar() {
   return (
     <nav className="navbar">
       <Link to="/" className="site-title">
-        <img src={disney} />
+        <img src={disney} className="img" />
       </Link>
       <ul className="menu-bar">
-        <CustomLink to="/">Home</CustomLink>
-        <CustomLink to="/Characters">Characters</CustomLink>
-        <CustomLink to="/Favourites">Favourites</CustomLink>
-        <CustomLink to="/About">About</CustomLink>
+        <CustomLink to="/">
+          <AiOutlineHome />
+        </CustomLink>
+        <CustomLink to="/Characters">
+          <TbBuildingCastle />
+        </CustomLink>
+        <CustomLink to="/Favourites">
+          <AiOutlineHeart />
+        </CustomLink>
+        <CustomLink to="/About">
+          <AiOutlineInfoCircle />
+        </CustomLink>
       </ul>
     </nav>
   );

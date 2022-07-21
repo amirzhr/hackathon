@@ -1,8 +1,15 @@
 import React from "react";
 import axios from "axios";
+import "./About.css"
 
 const About = () => {
-  return <h1>About</h1>
+  return (
+    <section className="body">
+      <div>
+
+      </div>
+    </section>
+  )
 };
 
 export default About;
