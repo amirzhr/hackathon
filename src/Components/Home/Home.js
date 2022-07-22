@@ -26,9 +26,11 @@ const Home = () => {
         <div className="footer">
           <h1 className="welcome">Welcome to Disneyland !</h1>
           <h2>Where all your dream comes true</h2>
-          <button onClick={routeChange} className="characterPage">
-            EXPLORE OUR MAGICAL WORLD
-          </button>
+          <div className="buttons">
+            <button onClick={routeChange} className="btn explore_btn">
+              EXPLORE OUR MAGICAL WORLD
+            </button>
+          </div>
           <p>© 2022 D-JAMZ Group</p>
         </div>
       </nav>

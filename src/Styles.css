@@ -39,7 +39,7 @@ img {
 }
 
 .navbar a {
-  color: rgb(48, 6, 82);
+  color: rgb(223, 213, 213);
   text-decoration: none;
   font-size: 30px;
 
@@ -47,7 +47,7 @@ img {
   list-style: none;
   width: 60px;
   height: 60px;
-  background: rgb(161, 29, 194);
+  background: rgb(13, 6, 77);
   border-radius: 60px;
   cursor: pointer;
   display: flex;

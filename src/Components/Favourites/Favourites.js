@@ -3,8 +3,6 @@ import "./Favourites.css";
 import { fav } from "../Characters/Page";
 
 const Favourites = () => {
-  console.log(fav);
-
   return (
     <section className="body">
       <h1 className="fav">MY FAVOURITE DISNEY CHARACTERS</h1>

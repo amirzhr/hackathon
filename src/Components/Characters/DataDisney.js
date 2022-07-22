@@ -37,7 +37,6 @@ function DataDisney() {
     navigate(`/characters/${id}`);
   });
 
-  console.log(characterList);
   return (
     <div className="body">
       <h1>CHARACTERS</h1>

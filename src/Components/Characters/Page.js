@@ -24,11 +24,8 @@ function Page() {
     getProfile();
   }, [id]);
 
-  console.log(profile);
-
   function add_fav() {
     fav.push(profile);
-    console.log(fav);
   }
 
   return (
