@@ -1,4 +1,4 @@
-.scale {
+/* .scale {
   width: 300px;
   height: 300px;
 }
@@ -144,4 +144,258 @@ p {
 
 .category {
   font-size: large;
+} */
+
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Lato&display=swap");
+
+.scale {
+  width: 300px;
+  height: 300px;
+}
+.title {
+  font-family: "Cinzel", serif;
+  font-size: 50px;
+  margin-bottom: 100px;
+  color: rgb(145, 140, 196);
+}
+
+
+.body {
+  /* background: linear-gradient(45deg, #c44d96, #b700ff); */
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(0, 0, 0);
+}
+
+.head {
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  padding: 20px;
+}
+.scale:hover {
+  transform: scale(1.2, 1.2);
+  z-index: 2;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.images {
+  display: inline-flex;
+  flex-direction: row;
+  padding: 1rem;
+  align-content: center;
+  box-shadow: 0 0 20px 2px rgba(0, 0);
+  transition: 0.1s;
+}
+.buttons {
+  padding-top: 50px;
+}
+.previous {
+  border-radius: 25px 5px 5px 25px;
+  background-color: rgb(255, 255, 255);
+
+  padding: 1px;
+  cursor: pointer;
+  height: 45px;
+  width: 65px;
+  color: rgb(9, 8, 61);
+  line-height: 45px;
+  text-align: center;
+  font-size: 30px;
+}
+.next {
+  border-radius: 5px 25px 25px 5px;
+
+  padding: 1px;
+  cursor: pointer;
+  height: 45px;
+  width: 65px;
+  color: rgb(9, 8, 61);
+  line-height: 45px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.previous.active,
+.previous:hover,
+.next:active,
+.next:hover {
+  color: #fff;
+  background: #953abe;
+}
+
+.add_to_fav {
+  color: rgb(223, 213, 213);
+
+  font-size: 20px;
+
+  list-style: none;
+  width: 300px;
+  height: 60px;
+  background: rgb(13, 6, 77);
+  border-radius: 60px;
+  cursor: pointer;
+
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  font-family: "Poppins", sans-serif;
+
+  margin-top:30px;
+  margin-bottom:30px;
+}
+
+.add_to_fav:hover {
+  color: #953abe;
+}
+
+.add_to_fav::before {
+  content: "";
+  position: absolute;
+
+  border-radius: 60px;
+
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.add_to_fav:hover::before {
+  opacity: 0.2;
+}
+
+.add_to_fav::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  border-radius: 60px;
+  transition: 0.5s;
+  filter: blur(20px);
+  z-index: -1;
+  opacity: 0;
+}
+
+.add_to_fav:hover::after {
+  opacity: 0.5s;
+}
+
+.character {
+  margin-top: 50px;
+  height: 400px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 400px;
+  border: 5px solid rgb(63, 2, 58);
+  border-radius: 30px;
+}
+.name {
+  font-family: "Cinzel", serif;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-container {
+  display: flex;
+  flex-direction:column;
+  min-height: 100vh;
+  width: 100%;
+  background-image: url(toy-story.jpeg);
+  background-position: center;
+  background-size: cover;
+ 
+}
+
+.found-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  min-height: 45pm;
+  justify-content: center;
+  align-items: left;
+  
+
+}
+
+.friends-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+ 
+  
+  
+  padding-right: 40px;
+  min-height: 45pm;
+  justify-content: center;
+  align-items: left;
+}
+
+.commercial-container {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  min-height: 45pm;
+  justify-content: center;
+  align-items: left;
+}
+
+.description {
+  display: inline-flex;
+  /* margin: 50px 200px 50px 200px; */
+  border: 5px solid rgb(63, 2, 58);
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  margin-left: 20px;
+  margin-right:20px;
+
+  
+}
+
+p {
+  color: rgb(13,6,77);
+  font-family: 'Poppins',sans-serif;
+  justify-content: center;
+  font-weight:500;
+}
+
+.film {
+ 
+  padding:9px;
+}
+
+
+.allies-enemies {
+
+  padding: 9px;
+}
+
+.commercials {
+  padding: 9px;
+}
+
+.btn-favourites {
+  font-family: "Poppins";
+  position: relative;
+  margin: 32px;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: 500;
+  display: inline-block;
+  margin-top: 50px;
+  padding: 8px 20px;
+  background: rgb(13, 6, 77);
+  color: #fff;
+  border-radius: 40px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.btn-favourites:hover {
+  transform:scale(1.1,1.1)
 }

@@ -7,7 +7,7 @@ const Favourites = () => {
 
   return (
     <section className="body">
-      <h1 className="fav">MY FAVOURITE DSNEY CHARACTERS</h1>
+      <h1 className="fav">MY FAVOURITE DISNEY CHARACTERS</h1>
       <div className="home">
         <div>
           {fav.map((favor) => {
