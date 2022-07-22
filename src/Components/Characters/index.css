@@ -54,19 +54,22 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   width: 400px;
   border: 5px solid rgb(15, 2, 63);
+  border-radius: 30px;
 }
 .name {
+  align-items: center;
+  justify-content: center;
 }
 
 .page-container {
   display: flex;
-  flex-direction: column;
+  flex-direction:column;
   min-height: 100vh;
   width: 100%;
   background-image: url(toy-story.jpeg);
   background-position: center;
   background-size: cover;
-  position: relative;
+ 
 }
 
 .found-container {
@@ -76,15 +79,23 @@
   padding-left: 40px;
   padding-right: 40px;
   min-height: 45pm;
+  justify-content: center;
+  align-items: left;
+  
+
 }
 
 .friends-container {
   display: flex;
   flex-direction: column;
   padding-top: 40px;
-  padding-left: 40px;
+ 
+  
+  
   padding-right: 40px;
   min-height: 45pm;
+  justify-content: center;
+  align-items: left;
 }
 
 .commercial-container {
@@ -92,15 +103,20 @@
   flex-direction: column;
   padding: 40px;
   min-height: 45pm;
+  justify-content: center;
+  align-items: left;
 }
 
 .description {
   display: inline-flex;
-  margin: 50px 200px 50px 200px;
-  border: 5px solid rgb(15, 2, 63);
+  /* margin: 50px 200px 50px 200px; */
+  border: 5px solid rgb(63, 2, 58);
   flex-wrap: wrap;
-  justify-content: left;
+  justify-content: center;
+  align-items: center;
   text-align: left;
+  margin-left: 20px;
+  margin-right:20px;
 }
 
 p {
